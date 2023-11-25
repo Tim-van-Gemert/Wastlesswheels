@@ -71,7 +71,7 @@ export default function Header({menuItems}) {
 
                 <Link onClick={handleClick} href={'/'} className='text-nav text-primary relative z-[11]'>Wasteless Wheels</Link>
 
-                <button onClick={handleClick} className="flex relative z-[11]'> flex-col justify-center items-center md:hidden flex gap-1">
+                <button onClick={handleClick} className="flex relative z-[11]'> flex-col justify-center items-center md:hidden flex gap-1 h-[30px]">
                         <span className={`bg-black block  relative z-[11] transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-2' : '-translate-y-1' }`} >
                         </span>
                         <span className={`bg-black block  relative z-[11] transition-all duration-300 ease-out h-0.5 w-6 rounded-sm my-0.5 ${isOpen ? 'opacity-0' : 'opacity-100' }`} >
