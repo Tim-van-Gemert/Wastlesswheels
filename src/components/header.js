@@ -80,7 +80,7 @@ export default function Header({menuItems}) {
                         </span>    
                 </button>
 
-                <div id='primary-nav' className='menu-transition flex gap-5 z-[10]  w-full md:w-fit top-0 left-0 md:right-0 px-6  md:px-0 bg-white md:bg-transparent  h-0 absolute md:relative overflow-hidden md:overflow-visible md:h-fit md:text-nav-small  lg:text-nav  text-black '>
+                <div id='primary-nav' className='menu-transition flex  gap-1 md:gap-5 z-[10]  w-full md:w-fit top-0 left-0 md:right-0 px-6  md:px-0 bg-white md:bg-transparent  h-0 absolute md:relative overflow-hidden md:overflow-visible md:h-fit text-nav-mobile  md:text-nav-small  lg:text-nav  text-black '>
             
                 {menuItems.map((item) => {
                     return (

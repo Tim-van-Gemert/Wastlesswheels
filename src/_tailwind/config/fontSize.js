@@ -6,6 +6,10 @@ const fontSize = {
     fontWeight: '500',
     }],
 
+    'nav-mobile': ['20px', {
+        fontWeight: '500',
+    }],
+
     'title-h1': ['96px', {
         fontWeight: '600',
     }],
