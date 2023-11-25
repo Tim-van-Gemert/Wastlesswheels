@@ -2,6 +2,8 @@ import '@/styles/globals.css'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 
+import { Analytics } from '@vercel/analytics/react';
+
 export default function App({ Component, pageProps }) {
 
   const menuItems =[
@@ -28,7 +30,7 @@ export default function App({ Component, pageProps }) {
 
   ]
   return <>
-
+    <Analytics />
     <Header menuItems={menuItems}></Header>
       <Component {...pageProps} />
     <Footer menuItems={menuItems}></Footer>
