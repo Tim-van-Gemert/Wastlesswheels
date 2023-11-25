@@ -6,7 +6,7 @@ const poppins = Poppins({ subsets: ['latin'],  weight: ["400", "500", "600", "70
 export default function Footer({ menuItems }) {
     const locations = ['Utrecht', 'Amsterdam', 'Den Haag']
     return <>
-        <footer className='text-white  pt-24 pb-12 bottom-0 z-[2]  w-full flex justify-center mt-auto px-6 xl:px-12'>
+        <footer className='text-white  pt-12 pb-12 bottom-0 z-[2]  w-full flex justify-center mt-auto px-6 xl:px-12'>
             <div className='w-full lg:w-theme max-w-theme grid grid-cols-12 text-primary'>
                 <div className=' col-span-12 xl:col-span-3 flex flex-col gap-2'>
                     <span className='text-regular-bold mb-3'>Wasteless Wheels</span>
@@ -35,7 +35,7 @@ export default function Footer({ menuItems }) {
                     <Link href={'/contact'} className={"text-regular-small flex items-center w-fit justify-center  p-3 md:p-4 rounded-full border border-[2px] border-solid-accent hover:bg-black hover:text-white transition-all"}  >Neem contact op</Link>
                 </div>
                 
-                <div className='col-span-12  mt-8 md:mt-24 flex  gap-6 md:gap-0 flex-col md:flex-row justify-between text-gray'>
+                <div className='col-span-12  mt-8 md:mt-12 flex  gap-6 md:gap-0 flex-col md:flex-row justify-between text-gray'>
                     <div className='text-regular-small  w-fit '>Gemaakt door Tessa van Gemert</div>
                     <div className='text-regular-small  w-fit '>Copyright 2023</div>
                 </div>
