@@ -84,7 +84,7 @@ export default function Header({menuItems}) {
             
                 {menuItems.map((item) => {
                     return (
-                        <Link  onClick={handleClick}  key={item.href} className='group' href={item.href}> 
+                        <Link  onClick={handleClick}  key={item.href} className='group h-fit' href={item.href}> 
                         <span className='group-hover:text-accent'>{item.title}</span>
                         <div className='w-0 group-hover:w-full transition-all h-[2px] bg-accent'></div>
                         </Link>
