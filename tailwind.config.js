@@ -1,11 +1,11 @@
 
 // Config
-import colors from '../src/_tailwind/config/colors.js';
-import spacing from './src/_tailwind/config/spacing.js';
-import width from './src/_tailwind/config/width.js';
-import maxWidth from './src/_tailwind/config/maxWidth.js';
-import breakpoints from './src/_tailwind/config/breakpoints.js';
-import fontSize from './src/_tailwind/config/fontSize.js';
+import colors from '../src/_tailwind/config/colors';
+import spacing from './src/_tailwind/config/spacing';
+import width from './src/_tailwind/config/width';
+import maxWidth from './src/_tailwind/config/maxWidth';
+import breakpoints from './src/_tailwind/config/breakpoints';
+import fontSize from './src/_tailwind/config/fontSize';
 
 
 
