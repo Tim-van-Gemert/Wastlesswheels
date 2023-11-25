@@ -3,9 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/ons-menu": "pages/ons-menu.js",
-  "/contact": "pages/contact.js",
-  "/doe-mee": "pages/doe-mee.js",
-  "/onze-missie": "pages/onze-missie.js",
-  "/over-ons": "pages/over-ons.js",
-  "/": "pages/index.js"
+  "/landingspagina": "pages/landingspagina.js",
+  "/onze-missie": "pages/onze-missie.js"
 }

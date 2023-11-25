@@ -26,13 +26,14 @@ export default function App({ Component, pageProps }) {
     {
       title: 'Contact',
       href: '/contact'
-    },
-
+    }
   ]
+
+
   return <>
     <Analytics />
     <Header menuItems={menuItems}></Header>
-      <Component {...pageProps} />
+      <Component {...pageProps}  />
     <Footer menuItems={menuItems}></Footer>
 
   </>
