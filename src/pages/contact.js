@@ -12,7 +12,7 @@ export default function Contact() {
         <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative   text-primary'>Heb je vragen?</h2>
       </section>
 
-      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12  mt-10 md:mt-20'>
+      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12  mt-10'>
         <div className='flex col-span-12 grid grid-cols-12'>
           <div className=' order-2 md:order-1 col-span-12  lg:col-start-0  lg:col-span-10  text-regular-small md:text-regular'>
             Heb je vragen, suggesties of wil je meer weten over onze missie en gerechten? Neem gerust contact met ons op. We horen graag van je en delen met plezier onze passie voor duurzaamheid en heerlijk eten.

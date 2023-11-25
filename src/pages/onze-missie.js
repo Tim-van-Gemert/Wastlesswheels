@@ -12,7 +12,7 @@ export default function OurMission() {
         <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative   text-primary'>Hoe wij verspilling bestrijden</h2>
       </section>
 
-      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12 mt-10 md:mt-20'>
+      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12 mt-10 '>
         <div className='flex col-span-12 grid grid-cols-12'>
           <div className=' order-2 md:order-1 col-span-12  lg:col-start-0  lg:col-span-10  text-regular-small md:text-regular'>
           Onze missie is simpel maar krachtig: het verminderen van voedselverspilling door heerlijke vegetarische gerechten te creëren. Bij WasteLess Wheels geloven we dat elk gerecht dat we serveren, een verhaal vertelt over bewustzijn, verantwoordelijkheid en de liefde voor onze planeet. We willen onze klanten niet alleen voeden met voortreffelijke gerechten, maar ook educeren over de impact van voedselverspilling.

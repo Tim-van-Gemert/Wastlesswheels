@@ -12,7 +12,7 @@ export default function Home() {
         <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative  text-primary'>de revolutie in streetfood</h2>
       </section>
 
-      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12 md:mt-20'>
+      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12 md:mt-10'>
         <div className='flex col-span-12 grid grid-cols-12'>
           <div className=' order-2 md:order-1 col-span-12  lg:col-start-0  lg:col-span-6  text-regular-small md:text-regular'>
             Welkom bij WasteLess Wheels, de revolutie in streetfood, waar duurzaamheid en smaak samenkomen. Opgericht door Tessa van Gemert, een gepassioneerde voorvechter van een duurzamere wereld, belichaamt onze foodtruck meer dan alleen eten; het is een beweging tegen voedselverspilling.

@@ -12,7 +12,7 @@ export default function AboutUs() {
         <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative   text-primary'>En onze heerlijke smaken</h2>
       </section>
 
-      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12  mt-10 md:mt-20'>
+      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12  mt-10 '>
         <div className='flex col-span-12 grid grid-cols-12'>
           <div className=' order-2 md:order-1 col-span-12  lg:col-start-0  lg:col-span-10  text-regular-small md:text-regular'>
           Tessa van Gemert, de drijvende kracht achter WasteLess Wheels, is een visionair die haar zorgen over voedselverspilling omzette in een inspirerende onderneming. Haar liefde voor de planeet en wens om verandering te bewerkstelligen, zijn de kern van onze foodtruck. Elk recept, elk ingrediënt en elke maaltijd is zorgvuldig samengesteld om niet alleen de smaakpapillen te verwennen, maar ook om bij te dragen aan een betere wereld.

@@ -10,22 +10,28 @@ export default function Header({menuItems}) {
 
 
     const handleClick = () => {
-        setIsOpen(!isOpen);
-      
-        const navElement = document.getElementById('primary-nav');
-      
-        if (!isOpen) {
-          navElement.classList.remove('h-0');
-          navElement.classList.add('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
-      
-          document.querySelector('body').classList.add('overflow-hidden');
-        } else {
-          // Adding a delay of 500 milliseconds (adjust as needed)
-          setTimeout(() => {
-            navElement.classList.add('h-0');
-            navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
-            document.querySelector('body').classList.remove('overflow-hidden');
-          }, 200);
+
+        const screenWidth = window.innerWidth;
+
+        if (screenWidth < 768) {
+            setIsOpen(!isOpen);
+
+        
+            const navElement = document.getElementById('primary-nav');
+        
+            if (!isOpen) {
+            navElement.classList.remove('h-0');
+            navElement.classList.add('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
+        
+            document.querySelector('body').classList.add('overflow-hidden');
+            } else {
+            // Adding a delay of 500 milliseconds (adjust as needed)
+            setTimeout(() => {
+                navElement.classList.add('h-0');
+                navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
+                document.querySelector('body').classList.remove('overflow-hidden');
+            }, 200);
+            }
         }
       };
 
