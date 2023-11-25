@@ -1,6 +1,6 @@
 
 // Config
-import colors from '../src/_tailwind/config/colors';
+import colors from './src/_tailwind/config/colors';
 import spacing from './src/_tailwind/config/spacing';
 import width from './src/_tailwind/config/width';
 import maxWidth from './src/_tailwind/config/maxWidth';
