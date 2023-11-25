@@ -16,7 +16,7 @@ export default function Footer({ menuItems }) {
                     <span className='text-regular-bold mb-3'>Ontdek meer</span>
                     {menuItems.map((item) => {
                         return (
-                            <div key={item.href} className='text-regular-small border-solid  border-b-[1px] w-fit pb-1 border-primary hover:text-accent hover:cursor-pointer'>{item.title}</div>
+                            <Link href={item.href} key={item.href} className='text-regular-small border-solid  border-b-[1px] w-fit pb-1 border-primary hover:text-accent hover:cursor-pointer'>{item.title}</Link>
                         )
                     })}
                 </div>
@@ -25,14 +25,14 @@ export default function Footer({ menuItems }) {
                     <span className='text-regular-bold mb-3'>Onze locaties</span>
                     {locations.map((location) => {
                         return (
-                            <div  key={location} className='text-regular-small border-solid  border-b-[1px] w-fit pb-1 border-primary hover:text-accent hover:cursor-pointer'>{location}</div>
+                            <div  key={location} className='text-regular-small border-solid  border-b-[1px] w-fit pb-1 border-primary '>{location}</div>
                         )
                     })}
                 </div>
 
                 <div className='  mt-6 md:mt-12 col-span-12 xl:mt-0 md:col-span-4 xl:col-start-11 xl:col-span-3 flex flex-col gap-2'>
                     <span className='text-regular-bold mb-3'>Contact opnemen?</span>
-                    <Link className={"text-regular-small flex items-center w-fit justify-center  p-3 md:p-4 rounded-full border border-[2px] border-solid-accent hover:bg-black hover:text-white transition-all"}  href={'/contact'}>Neem contact op</Link>
+                    <Link href={'/contact'} className={"text-regular-small flex items-center w-fit justify-center  p-3 md:p-4 rounded-full border border-[2px] border-solid-accent hover:bg-black hover:text-white transition-all"}  >Neem contact op</Link>
                 </div>
                 
                 <div className='col-span-12  mt-8 md:mt-24 flex  gap-6 md:gap-0 flex-col md:flex-row justify-between text-gray'>
