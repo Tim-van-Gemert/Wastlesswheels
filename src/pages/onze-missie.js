@@ -7,7 +7,7 @@ export default function OurMission() {
   return (
     <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6  ${poppins.className}`}>
       <section className=' w-full 2xl:w-theme max-w-theme  mt-12'>
-        <img className='absolute left-0 top-0 z-[0] ' src='/svg-shape-6.svg'></img>
+        <img className='absolute left-0 top-0 z-[0]  w-full ' src='/svg-shape-6.svg'></img>
         <h1 className=' text-title-h1-small md:text-title-h1 relative  text-primary'>Onze missie</h1>
         <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative   text-primary'>Hoe wij verspilling bestrijden</h2>
       </section>

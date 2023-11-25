@@ -69,7 +69,7 @@ export default function Header({menuItems}) {
         <header className={`flex absolute top-0 z-[2] justify-center py-5 w-screen px-6 ${poppins.className}`}>
             <div className='flex w-full justify-between items-center w-full lg:w-theme  max-w-theme '>
 
-                <Link  href={'/'} className='text-nav text-primary relative z-[11]'>Wasteless Wheels</Link>
+                <Link onClick={handleClick} href={'/'} className='text-nav text-primary relative z-[11]'>Wasteless Wheels</Link>
 
                 <button onClick={handleClick} className="flex relative z-[11]'> flex-col justify-center items-center md:hidden flex gap-1">
                         <span className={`bg-black block  relative z-[11] transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-2' : '-translate-y-1' }`} >
