@@ -2,9 +2,10 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/doe-mee": "pages/doe-mee.js",
-  "/over-ons": "pages/over-ons.js",
-  "/onze-missie": "pages/onze-missie.js",
+  "/ons-menu": "pages/ons-menu.js",
   "/contact": "pages/contact.js",
-  "/ons-menu": "pages/ons-menu.js"
+  "/doe-mee": "pages/doe-mee.js",
+  "/onze-missie": "pages/onze-missie.js",
+  "/over-ons": "pages/over-ons.js",
+  "/": "pages/index.js"
 }

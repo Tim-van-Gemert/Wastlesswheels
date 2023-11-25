@@ -53,6 +53,22 @@ export default function Header({menuItems}) {
       };
 
 
+      const handleHomeClick = () => {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 768) {
+            setIsOpen(false);
+
+
+            navElement.classList.add('h-0');
+            navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]');
+            document.querySelector('body').classList.remove('overflow-hidden');
+ 
+
+
+        }
+
+
+      };
   
 
     useEffect(() => {
@@ -91,7 +107,7 @@ export default function Header({menuItems}) {
         <header className={`flex absolute top-0 z-[2] justify-center py-5 w-screen px-6 ${poppins.className}`}>
             <div className='flex w-full justify-between items-center w-full lg:w-theme  max-w-theme '>
 
-                <Link onClick={handleClick} href={'/'} className='text-nav text-primary relative z-[11]'>Wasteless Wheels</Link>
+                <Link onClick={handleHomeClick} href={'/'} className='text-nav text-primary relative z-[11]'>Wasteless Wheels</Link>
 
                 <button onClick={handleClick} className="flex relative z-[11]'> flex-col justify-center items-center md:hidden flex gap-1 h-[30px]">
                         <span className={`bg-black block  relative z-[11] transition-all duration-300 ease-out h-0.5 w-6 rounded-sm ${isOpen ? 'rotate-45 translate-y-2' : '-translate-y-1' }`} >
