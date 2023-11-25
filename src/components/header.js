@@ -18,19 +18,36 @@ export default function Header({menuItems}) {
 
         
             const navElement = document.getElementById('primary-nav');
+            const navItems = navElement.querySelectorAll('.navitem')
         
             if (!isOpen) {
-            navElement.classList.remove('h-0');
-            navElement.classList.add('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
+
+            setTimeout(() => {
+                navElement.classList.remove('h-0');
+                navElement.classList.add('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
+                Array.from(navItems).map((item) => {
+                    item.classList.remove('opacity-0');
+                })
+            }, 200);
+
         
             document.querySelector('body').classList.add('overflow-hidden');
             } else {
-            // Adding a delay of 500 milliseconds (adjust as needed)
+      
             setTimeout(() => {
                 navElement.classList.add('h-0');
-                navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]', 'menu-transition');
+                navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]');
                 document.querySelector('body').classList.remove('overflow-hidden');
             }, 200);
+
+
+
+            setTimeout(() => {
+                Array.from(navItems).map((item) => {
+                    item.classList.add('opacity-0');
+                })
+            }, 200);
+            
             }
         }
       };
@@ -41,11 +58,16 @@ export default function Header({menuItems}) {
     useEffect(() => {
         const handleResize = () => {
             const navElement = document.getElementById('primary-nav');
+            const navItems = navElement.querySelectorAll('.navitem')
+
             
             if (window.innerWidth > 768) {
                 navElement.classList.add('h-0');
                 navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]');
                 document.querySelector('body').classList.remove('overflow-hidden')
+                Array.from(navItems).map((item) => {
+                    item.classList.remove('opacity-0');
+                })
             } else {
                 setIsOpen(false)
             }
@@ -80,13 +102,13 @@ export default function Header({menuItems}) {
                         </span>    
                 </button>
 
-                <div id='primary-nav' className='menu-transition flex  gap-1 md:gap-5 z-[10]  w-full md:w-fit top-0 left-0 md:right-0 px-6  md:px-0 bg-white md:bg-transparent  h-0 absolute md:relative overflow-hidden md:overflow-visible md:h-fit text-nav-mobile  md:text-nav-small  lg:text-nav  text-black '>
+                <div id='primary-nav' className='menu-transition flex  gap-5 z-[10]  w-full md:w-fit top-0 left-0 md:right-0 px-6  md:px-0 bg-white md:bg-transparent  h-0 absolute md:relative overflow-hidden md:overflow-visible md:h-fit text-nav-mobile  md:text-nav-small  lg:text-nav  text-black '>
             
                 {menuItems.map((item) => {
                     return (
-                        <Link  onClick={handleClick}  key={item.href} className='group h-fit' href={item.href}> 
+                        <Link  onClick={handleClick}  key={item.href} className='group navitem h-fit w-fit' href={item.href}> 
                         <span className='group-hover:text-accent'>{item.title}</span>
-                        <div className='w-0 group-hover:w-full transition-all h-[2px] bg-accent'></div>
+                        <div className=' w-full md:w-0 group-hover:w-full  transition-all h-[2px] bg-accent'></div>
                         </Link>
                     )
                 })}
