@@ -3,6 +3,6 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/over-ons": "pages/over-ons.js",
-  "/onze-missie": "pages/onze-missie.js"
+  "/duurzame-foodtruck": "pages/duurzame-foodtruck.js",
+  "/over-ons": "pages/over-ons.js"
 }

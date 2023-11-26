@@ -15,7 +15,7 @@ export default function Hero({page}) {
             <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative   text-primary'>{page.subtitle}</h2>
         </section>
 
-        <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12  mt-10 '>
+        <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12  mt-10 overlfow-x-hidden  '>
             <div className='flex col-span-12 grid grid-cols-12'>
             <div className=' order-2 md:order-1 col-span-12  lg:col-start-0  lg:col-span-10  flex flex-col gap-8 '>
             <div className='text-regular-small md:text-regular'> {page.text}</div>

@@ -16,7 +16,7 @@ export default function LandingPage() {
   return (
     <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  px-6  pb-36 ${poppins.className}`}>
         <Hero page={currentPage}/>
-        <section className=' w-full 2xl:w-theme max-w-theme relative z-[1]  gap-8  mt-40 '>
+        <section className=' w-full 2xl:w-theme max-w-theme relative z-[1]  gap-8  mt-10 md:mt-40'>
           <div className='bg-primary w-full grid grid-cols-12 ' >
             <div className='flex flex-col justify-center items-center relative overflow-hidden col-span-12 p-5 gap-3 h-[240px] relative'>
               <img src='/landingspagina/asset4.svg' className='absolute  w-[60px] z-[2] left-[80%] top-1/2'></img>

@@ -1,4 +1,5 @@
 import { Poppins } from 'next/font/google'
+import Image from 'next/image'
 
 const poppins = Poppins({ subsets: ['latin'],  weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
 
@@ -18,7 +19,12 @@ export default function Home() {
             Welkom bij WasteLess Wheels, de revolutie in streetfood, waar duurzaamheid en smaak samenkomen. Opgericht door Tessa van Gemert, een gepassioneerde voorvechter van een duurzamere wereld, belichaamt onze foodtruck meer dan alleen eten; het is een beweging tegen voedselverspilling.
           </div>
           <div className='order-1 md:order-2 mt-10 mb-10 md:mb-0  lg:-mt-12     col-span-12 lg:col-span-5 relative lg:col-start-8'>
-            <img className=' z-[2] ' src='/foodtruck_inside.jpg'></img>
+            <Image
+              src="/foodtruck_inside.jpg"
+              width={570}
+              height={380}
+              alt="Home image"
+            />
           </div>
 
         </div>
