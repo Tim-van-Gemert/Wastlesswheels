@@ -33,7 +33,6 @@ export default function App({ Component, pageProps }) {
   ]
 
   useEffect(() => {
-    // Initialize Google Tag Manager with your GTM ID
     initializeGoogleTagManager('GTM-W2T7DJKT');
   }, []);
 
