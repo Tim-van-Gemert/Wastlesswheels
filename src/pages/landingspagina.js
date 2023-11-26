@@ -33,7 +33,7 @@ export default function LandingPage() {
               <img src='/landingspagina/asset4.svg' className='absolute  w-[60px] z-[2] right-[90%] top-1/4'></img>
               <img src='/landingspagina/asset4.svg' className='absolute  w-[60px] z-[2] left-[90%] top-1/4'></img>
               <h2 className=' text-title-h2-small md:text-title-h2 text-center  relative bg-black z-[3] text-white'>Klinkt dit als iets voor jou?</h2>
-              <Link href={'/'} className={"text-regular-small flex items-center w-fit z-[2]  p-3 md:p-4 rounded-full border border-[2px] border-white bg-transparent text-white hover:bg-white hover:text-black transition-all"}>Ontdek meer</Link>
+              <Link href={'/'} id='Landings_pagina_cta' className={"text-regular-small flex items-center w-fit z-[2]  p-3 md:p-4 rounded-full border border-[2px] border-white bg-transparent text-white hover:bg-white hover:text-black transition-all"}>Ontdek meer</Link>
             </div>
           </div>
         </section>  
