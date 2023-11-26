@@ -2,7 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/ons-menu": "pages/ons-menu.js",
-  "/": "pages/index.js",
-  "/onze-missie": "pages/onze-missie.js"
+  "/duurzame-foodtruck": "pages/duurzame-foodtruck.js",
+  "/": "pages/index.js"
 }
