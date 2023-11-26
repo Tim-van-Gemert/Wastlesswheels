@@ -27,10 +27,15 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/duurzame-foodtruck": [
+    "/onze-missie": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
-      "static/chunks/pages/duurzame-foodtruck.js"
+      "static/chunks/pages/onze-missie.js"
+    ],
+    "/over-ons": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/over-ons.js"
     ]
   },
   "ampFirstPages": []

@@ -6,7 +6,8 @@ export default function Home() {
   return (
     <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6  ${poppins.className}`}>
       <section className=' w-full 2xl:w-theme max-w-theme  mt-12 '>
-        <img className='absolute left-0 top-0 z-[0] w-full ' src='/svg-shape-6.svg'></img>
+        <img className='absolute  hidden md:flex left-0 top-0 z-[0]  w-full ' src='/svg-shape-6.svg'></img>
+        <img className='absolute  flex md:hidden left-0 top-0 z-[0]  w-full ' src='/svg-shape-mobile.svg'></img>
         <h1 className=' text-title-h1-small md:text-title-h1 relative md:mb-[24px] mt-5 text-primary'>Wasteless Wheels</h1>
         <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative  text-primary'>de revolutie in streetfood</h2>
       </section>
