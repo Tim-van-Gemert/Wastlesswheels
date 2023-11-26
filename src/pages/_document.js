@@ -5,7 +5,7 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        {/* <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=${process.env.GTM}`} ></iframe></noscript> */}
+        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-W2T7DJKT`} ></iframe></noscript>
         <Main />
         <NextScript />
       </body>
