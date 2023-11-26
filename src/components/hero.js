@@ -7,7 +7,7 @@ const poppins = Poppins({ subsets: ['latin'],  weight: ["200", "300", "400", "50
 export default function Hero({page}) {
   return (
     <>
-        <section className=' w-full 2xl:w-theme max-w-theme  mt-12 '>
+        <section className=' w-full 2xl:w-theme max-w-theme  mt-12 overlfow-hidden '>
             <img className='absolute left-0 top-0 z-[0]  w-full ' src='/svg-shape-6.svg'></img>
             <h1 className=' text-title-h1-small md:text-title-h1 relative  md:mb-[30px] md:mb-[24px] mt-5 text-primary'>{page.title}</h1>
             <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative   text-primary'>{page.subtitle}</h2>
