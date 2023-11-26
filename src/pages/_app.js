@@ -2,6 +2,8 @@ import '@/styles/globals.css'
 import Footer from '@/components/footer'
 import Header from '@/components/header'
 import Script from 'next/script'
+import { useEffect } from 'react';
+import { initializeGoogleTagManager } from './googleTagManager';
 
 import { Analytics } from '@vercel/analytics/react';
 
@@ -29,6 +31,11 @@ export default function App({ Component, pageProps }) {
       href: '/contact'
     }
   ]
+
+  useEffect(() => {
+    // Initialize Google Tag Manager with your GTM ID
+    initializeGoogleTagManager('GTM-W2T7DJKT');
+  }, []);
 
 
   return <>
