@@ -13,7 +13,7 @@ export default function OurMenu() {
   }
   
   return (
-    <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6  ${poppins.className}`}>
+    <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6 ${poppins.className}`}>
       <Hero page={currentPage}/>
     </main>
   )

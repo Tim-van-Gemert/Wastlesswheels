@@ -2,11 +2,6 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/landingspagina": "pages/landingspagina.js",
-  "/onze-missie": "pages/onze-missie.js",
-  "/ons-menu": "pages/ons-menu.js",
-  "/over-ons": "pages/over-ons.js",
-  "/doe-mee": "pages/doe-mee.js",
-  "/contact": "pages/contact.js",
-  "/": "pages/index.js"
+  "/": "pages/index.js",
+  "/landingspagina": "pages/landingspagina.js"
 }

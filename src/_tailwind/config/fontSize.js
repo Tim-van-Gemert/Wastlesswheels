@@ -12,6 +12,7 @@ const fontSize = {
 
     'title-h1': ['96px', {
         fontWeight: '600',
+        lineHeight: '1'
     }],
 
     'title-h1-small': ['32px', {
@@ -28,6 +29,10 @@ const fontSize = {
 
     'regular': ['24px', {
         fontWeight: '400',
+    }],
+
+    'regular-thin': ['24px', {
+        fontWeight: '300',
     }],
 
     'regular-bold': ['24px', {

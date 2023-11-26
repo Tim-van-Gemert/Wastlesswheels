@@ -27,35 +27,10 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
-    "/contact": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/contact.js"
-    ],
-    "/doe-mee": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/doe-mee.js"
-    ],
     "/landingspagina": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
       "static/chunks/pages/landingspagina.js"
-    ],
-    "/ons-menu": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/ons-menu.js"
-    ],
-    "/onze-missie": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/onze-missie.js"
-    ],
-    "/over-ons": [
-      "static/chunks/webpack.js",
-      "static/chunks/main.js",
-      "static/chunks/pages/over-ons.js"
     ]
   },
   "ampFirstPages": []
