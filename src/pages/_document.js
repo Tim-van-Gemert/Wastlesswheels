@@ -5,7 +5,8 @@ export default function Document() {
     <Html lang="en">
       <Head />
       <body>
-        <noscript><iframe src={`https://www.googletagmanager.com/ns.html?id=GTM-W2T7DJKT`} ></iframe></noscript>
+          <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2T7DJKT"
+          height="0" width="0"></iframe></noscript>
         <Main />
         <NextScript />
       </body>
