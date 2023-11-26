@@ -14,8 +14,10 @@ export default function OurMission() {
 
 
   return (
-    <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6  ${poppins.className}`}>
-      <Hero page={currentPage} />
+    <main>
+      <section className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6 lg:min-h-[705px] ${poppins.className}`}>
+        <Hero page={currentPage} />
+      </section>
     </main>
   )
 }
