@@ -104,7 +104,7 @@ export default function Header({menuItems}) {
 
 
     return <>
-        <header className={`flex absolute top-0 z-[2] justify-center py-5 w-screen px-6 ${poppins.className}`}>
+        <header className={`flex absolute top-0 z-[2] justify-center py-5 w-full px-6 ${poppins.className}`}>
             <div className='flex w-full justify-between items-center w-full lg:w-theme  max-w-theme '>
 
                 <Link onClick={handleHomeClick} href={'/'} className='text-nav text-primary relative z-[11]'>Wasteless Wheels</Link>
