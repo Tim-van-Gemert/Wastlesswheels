@@ -4,13 +4,7 @@ import Header from '@/components/header'
 import Script from 'next/script'
 import { useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
-import TagManager from 'react-gtm-module'
- 
-const tagManagerArgs = {
-    gtmId: process.env.GTM
-}
- 
-TagManager.initialize(tagManagerArgs)
+
 
 
 export default function App({ Component, pageProps }) {
