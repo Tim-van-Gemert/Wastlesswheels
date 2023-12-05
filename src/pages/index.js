@@ -79,7 +79,7 @@ export default function Home() {
       </section>
 
 
-      <section id='offerte-aanvragen'className='mt-[160px] ml:mt-[225px]  mb-[225px]'>
+      <section id='offerte-aanvragen'className='mt-[160px] ml:mt-[225px]  md:mb-[225px]'>
         <Form/>
       </section>
       

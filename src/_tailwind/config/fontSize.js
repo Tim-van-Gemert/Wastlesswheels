@@ -96,6 +96,12 @@ const fontSize = {
     }],
 
 
+    'btn-tiny': ['16px', {
+        fontWeight: '600',
+    }],
+
+
+
     'icon': ['14px', {
         fontWeight: '400',
     }],
