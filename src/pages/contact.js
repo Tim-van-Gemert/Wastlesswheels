@@ -13,8 +13,8 @@ export default function Contact() {
   }
 
   return (
-    <main>
-      <section className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6 lg:min-h-[705px] ${poppins.className}`}>
+    <main className={`${poppins.className} flex flex-col`}>
+      <section className='flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-10 px-4'>``
         <Hero page={currentPage} />
       </section>
     </main>

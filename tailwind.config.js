@@ -4,7 +4,7 @@ import colors from './src/_tailwind/config/colors';
 import spacing from './src/_tailwind/config/spacing';
 import width from './src/_tailwind/config/width';
 import maxWidth from './src/_tailwind/config/maxWidth';
-import breakpoints from './src/_tailwind/config/breakpoints';
+import screens from './src/_tailwind/config/screens';
 import fontSize from './src/_tailwind/config/fontSize';
 
 
@@ -27,7 +27,7 @@ module.exports = {
       spacing,
       width,
       maxWidth,
-      breakpoints,
+      screens,
       fontSize,
     },
   },

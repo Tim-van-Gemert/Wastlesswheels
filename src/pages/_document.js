@@ -10,7 +10,7 @@ function MyDocument() {
             j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
             })(window,document,'script','dataLayer', 'GTM-W2T7DJKT' );`}}>
-          </Script>
+      </Script>
       </Head>
       <body>
           <noscript dangerouslySetInnerHTML={{ __html: `<iframe src="https://www.googletagmanager.com/ns.html?id=GTM-W2T7DJKT'"

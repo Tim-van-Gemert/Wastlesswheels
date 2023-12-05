@@ -14,8 +14,8 @@ export default function LandingPage() {
   }
   
   return (
-    <main>
-      <section className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  px-6  pb-36 ${poppins.className}`}>
+    <main className={`${poppins.className} flex flex-col`}>
+      <section className='flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-10 px-4'>
         <Hero page={currentPage}/>
       </section>
       

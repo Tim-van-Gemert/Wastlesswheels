@@ -3,11 +3,12 @@ const colors = {
 
   'white': '#fff',
   'blue': '#000000',
-  'accent': '#29854e',
+  'accent': '#A3AE8E',
   'salmon': '#FFADB9',
   'black': '#000000',
   'gray': '#9d9d9d',
-  'red': '#ff000d'
+  'red': '#ff000d',
+  'lightgreen': '#86DB43'
 };
 
 const aliases = {

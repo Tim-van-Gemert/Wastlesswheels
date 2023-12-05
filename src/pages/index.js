@@ -1,40 +1,90 @@
 import { Poppins } from 'next/font/google'
+
 import Image from 'next/image'
+import Header from '@/components/header'
+import Button from '@/components/button'
+import Menu from '@/components/menu'
+
+import Text from '@/components/text'
+import Slider from '@/components/slider'
+import Form from '@/components/form'
+
+
+const menuItems =[
+  {
+    title: 'Over ons',
+    href: '#over-ons'
+  },
+  {
+    title: 'Ons menu',
+    href: '#menu'
+  },
+  {
+    title: 'Contact',
+    href: '#offerte-aanvragen'
+  }
+]
+
 
 const poppins = Poppins({ subsets: ['latin'],  weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export default function Home() {
   return (
-    <main className={`flex w-full flex-col items-center pt-8 relative  bg-white  overflow-y-hidden  pb-36 px-6  ${poppins.className}`}>
-      <div className='absolute hidden sm:flex top-0 w-full h-full  bg-gradient-to-r to-[#57ef94] from-[#3df587] z-[0] left-0 '></div>
+    <main className={`${poppins.className} flex flex-col`}>
 
-      <section className=' w-full 2xl:w-theme max-w-theme  mt-12 '>
-        <img className='absolute  flex sm:hidden left-0 top-0 z-[0]  w-full ' src='/svg-shape-mobile.svg'></img>
-        <h1 className=' text-title-h1-small md:text-title-h1 relative md:mb-[24px] mt-5 text-primary'>Wasteless Wheels</h1>
-        <h2 className=' text-title-h2-small md:text-title-h2 md:-mt-5 relative  text-primary'>de revolutie in streetfood</h2>
-      </section>
+      <section className='flex w-full flex-col items-center bg-black h-[100vh] max-h-[1000px]  relative '>
 
-      <section className=' w-full 2xl:w-theme max-w-theme relative z-[1] grid grid-cols-12 md:mt-10 '>
-        <div className='flex col-span-12 grid grid-cols-12'>
-          <div className=' order-2 md:order-1 col-span-12  lg:col-start-0  lg:col-span-6  text-regular-small md:text-regular'>
-            Welkom bij WasteLess Wheels, de revolutie in streetfood, waar duurzaamheid en smaak samenkomen. Opgericht door Tessa van Gemert, een gepassioneerde voorvechter van een duurzamere wereld, belichaamt onze foodtruck meer dan alleen eten; het is een beweging tegen voedselverspilling.
+      <Header menuItems={menuItems}></Header>/
+
+      <div className='bg-black opacity-[65%] w-full h-full z-[2] absolute'/>
+
+        <Image
+        className='absolute h-full w-full object-cover  z-[1] '
+          src="/foodtruck foto.jpg"
+          width={1400}
+          height={736}
+          alt="Picture of foodtruck"
+        />
+
+
+        <div className='flex w-full px-4 mlpx-theme-lg w-full xl:w-theme  flex-col items-start mt-[200px]  md:mt-[250px] z-[2] relative'>
+          <h1 className='text-title-h1-medium md:text-title-h1 text-white'>WasteLess Wheels</h1>
+          <span className='text-title-h2-small md:text-title-h2-bold text-accent '>De revolutie in streetfood</span>
+          <div className='mt-7 flex flex-col md:flex-row gap-3'>
+          <Button  text={'offerte aanvragen'} href={'#offerte-aanvragen'}/>
+          <Button  text={'Ons menu'} href={'#menu'}/>
+
           </div>
-          <div className='order-1 md:order-2 mt-10 mb-10 md:mb-0 relative  lg:-mt-6    col-span-12 lg:col-span-5 relative lg:col-start-8'>
-
-            <Image
-              src="/foodtruck_inside.jpg"
-              width={570}
-              height={380}
-              alt="Home image"
-              className=' '
-            />
-     
-          </div>
-
         </div>
+
       </section>
-  
+
+      <section id='over-ons' className='mt-[160px] ml:mt-[225px] '>
+      <Text content={{
+          text_top: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
+          text_bottom: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
+          text_button: 'Bekijk meer',
+          href_button: '/',
+        }
+      }/>
+
+      </section>
+
+      {/* <section className='mt-[225px]'>
+        <Slider/>
+      </section> */}
+
+      <section className=' mt-[160px] ml:mt-[225px]' id='menu'>
+        <Menu/>
+      </section>
+
+
+      <section id='offerte-aanvragen'className='mt-[160px] ml:mt-[225px]  mb-[225px]'>
+        <Form/>
+      </section>
+      
     </main>
+
   )
 }
 
