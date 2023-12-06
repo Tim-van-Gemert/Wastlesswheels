@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Button from './button'
 
 export default function Menu() {
 
@@ -12,16 +13,6 @@ export default function Menu() {
       name: 'Frisky fries',
       desc: 'Een hamburger gemaakt uit verse tomaat, kaas , ijsberg sla, runder gehakt en honing mosterd saus',
       image_src: '/fries.jpg'
-    },
-    {
-      name: 'Savory sweets',
-      desc: 'Een hamburger gemaakt uit verse tomaat, kaas , ijsberg sla, runder gehakt en honing mosterd saus',
-      image_src: '/sweets.jpg'
-    },
-    {
-      name: "Cold Coffee's",
-      desc: 'Een hamburger gemaakt uit verse tomaat, kaas , ijsberg sla, runder gehakt en honing mosterd saus',
-      image_src: '/coffee.jpg'
     },
     {
       name: 'Supreme salads',
@@ -57,6 +48,9 @@ export default function Menu() {
               </div> 
             )
           })}
+
+
+          <Button type={'black'} text={'Bekijk meer'} href={'/menu'}/>
 
 
         </div>

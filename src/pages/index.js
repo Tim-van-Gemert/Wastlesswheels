@@ -17,10 +17,10 @@ const poppins = Poppins({ subsets: ['latin'],  weight: ["200", "300", "400", "50
 
 export default function Home() {
     const menuItems =[
-      {
-        title: 'Offerte aanvragen',
-        href: '/offerte-aanvragen'
-      }
+      // {
+      //   title: 'Offerte aanvragen',
+      //   href: '/offerte-aanvragen'
+      // }
     ]
     
 
@@ -46,9 +46,8 @@ export default function Home() {
           <h1 className='text-title-h1-medium md:text-title-h1 text-white'>WasteLess Wheels</h1>
           <span className='text-title-h2-small md:text-title-h2-bold text-accent '>De revolutie in streetfood</span>
           <div className='mt-7 flex flex-col md:flex-row gap-3'>
+          <Button  text={'Impressie'} href={'/impressie'}/>
           <Button id={'Landings_pagina_cta'} text={'offerte aanvragen'} href={'/offerte-aanvragen'}/>
-          <Button  text={'Ons menu'} href={'#menu'}/>
-
           </div>
         </div>
 

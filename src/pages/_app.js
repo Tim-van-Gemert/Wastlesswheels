@@ -11,10 +11,10 @@ import Header from '@/components/header';
 export default function App({ Component, pageProps }) {
 
   const menuItems =[
-    {
-      title: 'Offerte aanvragen',
-      href: '/offerte-aanvragen'
-    }
+    // {
+    //   title: 'Offerte aanvragen',
+    //   href: '/offerte-aanvragen'
+    // }
   ]
   return <>
     <Script  strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG4}`}/>

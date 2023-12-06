@@ -27,6 +27,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/_error.js"
     ],
+    "/impressie": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/impressie.js"
+    ],
     "/offerte-aanvragen": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",

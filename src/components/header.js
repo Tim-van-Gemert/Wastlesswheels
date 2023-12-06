@@ -9,50 +9,50 @@ export default function Header({menuItems}) {
     const [isOpen, setIsOpen] = useState(false);
 
 
-    const handleClick = () => {
+    // const handleClick = () => {
 
-        const screenWidth = window.innerWidth;
+    //     const screenWidth = window.innerWidth;
 
-        if (screenWidth < 768) {
-            setIsOpen(!isOpen);
+    //     if (screenWidth < 768) {
+    //         setIsOpen(!isOpen);
 
         
-            const navElement = document.getElementById('primary-nav');
-            const navItems = navElement.querySelectorAll('.navitem')
+    //         const navElement = document.getElementById('primary-nav');
+    //         const navItems = navElement.querySelectorAll('.navitem')
         
-            if (!isOpen) {
+    //         if (!isOpen) {
 
-            setTimeout(() => {
-                navElement.classList.remove('h-0');
-                navElement.classList.add('flex-col', 'ml:px-theme-lg', 'pb-[1000px]', 'menu-transition', 'bg-black', 'pt-10');
+    //         setTimeout(() => {
+    //             navElement.classList.remove('h-0');
+    //             navElement.classList.add('flex-col', 'ml:px-theme-lg', 'pb-[1000px]', 'menu-transition', 'bg-black', 'pt-10');
   
-            }, 200);
+    //         }, 200);
 
-            setTimeout(() => {           
-            Array.from(navItems).map((item) => {
-                item.classList.remove('opacity-0');
-            })
-            }, 500);
+    //         setTimeout(() => {           
+    //         Array.from(navItems).map((item) => {
+    //             item.classList.remove('opacity-0');
+    //         })
+    //         }, 500);
 
-            document.querySelector('body').classList.add('overflow-hidden');
+    //         document.querySelector('body').classList.add('overflow-hidden');
 
-            } else {
+    //         } else {
       
-            setTimeout(() => {
-                navElement.classList.add('h-0');
-                navElement.classList.remove('flex-col', 'ml:px-theme-lg', 'pb-[1000px]', 'pt-10');
-                document.querySelector('body').classList.remove('overflow-hidden');
-            }, 200);
+    //         setTimeout(() => {
+    //             navElement.classList.add('h-0');
+    //             navElement.classList.remove('flex-col', 'ml:px-theme-lg', 'pb-[1000px]', 'pt-10');
+    //             document.querySelector('body').classList.remove('overflow-hidden');
+    //         }, 200);
 
 
 
-            Array.from(navItems).map((item) => {
-                item.classList.add('opacity-0');
-            })
+    //         Array.from(navItems).map((item) => {
+    //             item.classList.add('opacity-0');
+    //         })
             
-            }
-        }
-      };
+    //         }
+    //     }
+    //   };
 
 
       const handleHomeClick = () => {
@@ -72,35 +72,35 @@ export default function Header({menuItems}) {
       };
   
 
-    useEffect(() => {
-        const handleResize = () => {
-            const navElement = document.getElementById('primary-nav');
-            const navItems = navElement.querySelectorAll('.navitem')
+    // useEffect(() => {
+    //     const handleResize = () => {
+    //         const navElement = document.getElementById('primary-nav');
+    //         const navItems = navElement.querySelectorAll('.navitem')
 
             
-            if (window.innerWidth > 768) {
-                navElement.classList.add('h-0');
-                navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]', 'pt-10');
-                document.querySelector('body').classList.remove('overflow-hidden')
-                Array.from(navItems).map((item) => {
-                    item.classList.remove('opacity-0');
-                })
-            } else {
-                setIsOpen(false)
-            }
-        };
+    //         if (window.innerWidth > 768) {
+    //             navElement.classList.add('h-0');
+    //             navElement.classList.remove('flex-col', 'pt-[100px]', 'pb-[1000px]', 'pt-10');
+    //             document.querySelector('body').classList.remove('overflow-hidden')
+    //             Array.from(navItems).map((item) => {
+    //                 item.classList.remove('opacity-0');
+    //             })
+    //         } else {
+    //             setIsOpen(false)
+    //         }
+    //     };
     
-        if (typeof window !== 'undefined') {
-            window.addEventListener('resize', handleResize);
-        }
+    //     if (typeof window !== 'undefined') {
+    //         window.addEventListener('resize', handleResize);
+    //     }
     
-        // Clean up the event listener on component unmount
-        return () => {
-            if (typeof window !== 'undefined') {
-                window.removeEventListener('resize', handleResize);
-            }
-        };
-    }, []);
+    //     // Clean up the event listener on component unmount
+    //     return () => {
+    //         if (typeof window !== 'undefined') {
+    //             window.removeEventListener('resize', handleResize);
+    //         }
+    //     };
+    // }, []);
   
 
 
@@ -109,7 +109,7 @@ export default function Header({menuItems}) {
             <div className='flex w-full justify-between items-center py-4 w-full ml:w-theme  relative z-[3] max-w-theme px-4 ml:px-theme-lg'>
 
                 <Link onClick={handleHomeClick} href={'/'} className='text-nav text-primary text-white relative z-[11]'>Wasteless Wheels</Link>
-
+{/* 
                 <button onClick={handleClick} className="flex relative z-[11]'> flex-col justify-center items-center md:hidden flex gap-[4px] h-[30px] ">
                         <span className={`bg-white block  relative z-[11] transition-all duration-300 ease-out h-0.5 w-4 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5' }`} >
                         </span>
@@ -130,7 +130,7 @@ export default function Header({menuItems}) {
                     )
                 })}
         
-                </div>
+                </div> */}
             </div>
         </header>
     </>

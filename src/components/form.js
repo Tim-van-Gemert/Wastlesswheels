@@ -2,13 +2,36 @@ import Image from 'next/image'
 
 export default function Form() {
 
+  const handleSubmit = async (event) => {
+
+    event.preventDefault();
+    const formData = new FormData(event.currentTarget);
+    const body = {
+      name: formData.get('name'),
+      company: formData.get('company'),
+      email: formData.get('email'),
+      location: formData.get('location'),
+      extraInfo: formData.get('extraInfo')
+    };
+  
+    const response = await fetch('/api/sendMail', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify(body)
+    });
+  
+  
+  };
+  
+
+  
   return (
     <div className='flex w-full flex-col items-center relative bg-white overflow-hidden'>
       <div className=' w-full xl:w-theme max-w-theme grid grid-cols-12 px-4 ml:px-theme-lg '>
-        
+
       <div className=' col-span-12  ml:col-span-7  text-primary  flex flex-col'>
         <div className=' text-regular-small w-full max-w-full md:text-regular-thin '>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
-        <form className='mt-5 flex flex-col gap-5 w-full max-w-full'>
+        <form onSubmit={handleSubmit} className='mt-5 flex flex-col gap-5 w-full max-w-full'>
             <div className='flex flex-col md:flex-row gap-5'>
               <input type="text" className='w-full input  md:col-span-6 py-1 px-3 border-solid border-black border-[1px]  text-regular-small md:text-form' placeholder='Naam'/>
               <input type="text" className='w-full  input  md:col-span-6  py-1 px-3 border-solid border-black border-[1px] text-regular-small md:text-form' placeholder='Bedrijf'/>

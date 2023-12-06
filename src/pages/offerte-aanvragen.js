@@ -11,14 +11,14 @@ import Form from '@/components/form'
 const poppins = Poppins({ subsets: ['latin'],  weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
 
 
-export default function Home() {
+export default function Offerte() {
 
 
     const menuItems =[
-        {
-        title: 'Offerte aanvragen',
-        href: '/offerte-aanvragen'
-        }
+        // {
+        // title: 'Offerte aanvragen',
+        // href: '/offerte-aanvragen'
+        // }
     ]
 
   return (
