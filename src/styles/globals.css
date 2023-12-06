@@ -9,6 +9,10 @@
     /* transition-delay: 100ms ; */
 }
 
+.navitem {
+    transition: opacity 200ms ease-in-out;
+}
+
 .swiper-initialized {
     overflow: visible !important;
 }

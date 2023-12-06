@@ -25,13 +25,15 @@ export default function Header({menuItems}) {
             setTimeout(() => {
                 navElement.classList.remove('h-0');
                 navElement.classList.add('flex-col', 'ml:px-theme-lg', 'pb-[1000px]', 'menu-transition', 'bg-black', 'pt-10');
-                
-                Array.from(navItems).map((item) => {
-                    item.classList.remove('opacity-0');
-                })
+  
             }, 200);
 
-        
+            setTimeout(() => {           
+            Array.from(navItems).map((item) => {
+                item.classList.remove('opacity-0');
+            })
+            }, 200);
+
             document.querySelector('body').classList.add('overflow-hidden');
             } else {
       
@@ -43,13 +45,12 @@ export default function Header({menuItems}) {
 
 
 
-            setTimeout(() => {
 
                 Array.from(navItems).map((item) => {
                     item.classList.add('opacity-0');
                 })
                 
-            }, 200);
+      
             
             }
         }
@@ -124,7 +125,7 @@ export default function Header({menuItems}) {
             
                 {menuItems.map((item) => {
                     return (
-                        <Link  onClick={handleClick}  key={item.href} className='group navitem h-fit w-fit' href={item.href}> 
+                        <Link  onClick={handleClick}  key={item.href} className='group navitem h-fit w-fit ' href={item.href}> 
                         <span className='group-hover:text-accent text-white'>{item.title}</span>
                         <div className=' w-full md:w-0 group-hover:w-full  transition-all h-[2px] bg-accent'></div>
                         </Link>
