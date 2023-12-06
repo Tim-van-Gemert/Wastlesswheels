@@ -31,7 +31,7 @@ export default function Form() {
         </form>
       </div>
 
-      <div className='mt-12 col-span-12 flex  md:hidden ml:flex ml:col-span-5 ml:col-start-9 text-primary  flex flex-col'>
+      <div className='mt-12 md:mt-0 col-span-12 flex  md:hidden ml:flex ml:col-span-5 ml:col-start-9 text-primary  flex flex-col'>
         <Image
         className=' hidden md:flex z-[1] h-full'
           src="/form.jpg"

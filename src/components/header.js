@@ -108,7 +108,7 @@ export default function Header({menuItems}) {
 
     return <>
         <header className={` flex absolute top-0 z-[3] justify-center  w-full  ${poppins.className}`}>
-            <div className='flex w-full justify-between items-center py-4 w-full lg:w-theme  relative z-[3] max-w-theme px-4 =ml:px-theme-lg'>
+            <div className='flex w-full justify-between items-center py-4 w-full ml:w-theme  relative z-[3] max-w-theme px-4 ml:px-theme-lg'>
 
                 <Link onClick={handleHomeClick} href={'/'} className='text-nav text-primary text-white relative z-[11]'>Wasteless Wheels</Link>
 

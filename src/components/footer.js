@@ -32,7 +32,7 @@ export default function Footer({ menuItems }) {
 
                 <div className='  mt-6 md:mt-12 col-span-12 xl:mt-0 md:col-span-4 xl:col-start-11 xl:col-span-3 flex flex-col md:items-end gap-1'>
                     <span className='text-regular-bold mb-1 md:text-end'>Contact opnemen</span>
-                    <Link href={'#offerte-aanvragen'} className={"text-regular-small flex items-center w-fit justify-center  p-2 md:p-2 rounded-full border border-[2px] border-solid-accent hover:bg-black hover:text-white transition-all"}  >Neem contact op</Link>
+                    <Link href={'https://www.wastelesswheels.com/#offerte-aanvragen'} className={"text-regular-small flex items-center w-fit justify-center  p-2 md:p-2 rounded-full border border-[2px] border-solid-accent hover:bg-black hover:text-white transition-all"}  >Neem contact op</Link>
                 </div>
                 
                 <div className='col-span-12  mt-8 md:mt-12 flex  gap-6 md:gap-0 flex-col md:flex-row justify-between text-gray'>
