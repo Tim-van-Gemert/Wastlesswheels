@@ -13,11 +13,10 @@ export default function Footer({ menuItems }) {
                     <div className='text-regular-small '>de revolutie in streetfood, waar duurzaamheid en smaak samenkomen.</div>
                 </div>
                 <div className=' mt-6 md:mt-12 col-span-12 xl:mt-0 md:col-span-4 xl:col-start-5 xl:col-span-3 flex flex-col gap-1'>
-                    {menuItems.map((item) => {
-                        return (
-                            <Link href={item.href} key={item.href} className='text-regular-small border-solid  border-b-[1px] w-fit  border-primary hover:text-accent hover:cursor-pointer'>{item.title}</Link>
-                        )
-                    })}
+                    <span className='text-regular-bold mb-1'>Info</span>
+      
+                    <Link href={'mailto:Waste.W@hotmail.com'}  className='text-regular-small border-solid  border-b-[1px] w-fit  border-primary hover:text-accent hover:cursor-pointer'>Waste.W@hotmail.com</Link>
+
                 </div>
 
                 <div className='  mt-6 md:mt-12 col-span-12 xl:mt-0 md:col-span-4  xl:col-start-8 xl:col-span-3 flex flex-col gap-2'>
