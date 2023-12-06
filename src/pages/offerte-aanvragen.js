@@ -60,7 +60,7 @@ export default function Offerte() {
       </section> */}
 
 
-      <section className='mt-[110px] pt-[50px] ml:mt-[175px] ml:pt-[50px] md:mb-[225px]'>
+      <section className='mt-[50px] pt-[50px] ml:mt-[175px] ml:pt-[50px] md:mb-[225px]'>
         <Form/>
       </section>
       

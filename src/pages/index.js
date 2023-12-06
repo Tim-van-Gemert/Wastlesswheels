@@ -43,7 +43,7 @@ export default function Home() {
 
 
         <div className='flex w-full px-4 ml:px-theme-lg w-full xl:w-theme  flex-col items-start mt-[200px]  md:mt-[250px] z-[2] relative'>
-          <h1 className='text-title-h1-medium md:text-title-h1 text-white'>WasteLess Wheels</h1>
+          <h1 className='text-title-h1-medium-front md:text-title-h1 text-white'>WasteLess Wheels</h1>
           <span className='text-title-h2-small md:text-title-h2-bold text-accent '>De revolutie in streetfood</span>
           <div className='mt-7 flex flex-col md:flex-row gap-3'>
           <Button  text={'Impressie'} href={'/impressie'}/>
@@ -53,7 +53,7 @@ export default function Home() {
 
       </section>
 
-      <section id='over-ons' className='mt-[110px] pt-[50px] ml:mt-[175px] ml:pt-[50px] '>
+      <section id='over-ons' className='mt-[50px] pt-[50px] ml:mt-[175px] ml:pt-[50px] '>
       <Text content={{
           text_top: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
           text_bottom: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',

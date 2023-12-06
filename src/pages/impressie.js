@@ -26,7 +26,7 @@ export default function Impressie() {
           height={736}
           alt="Picture of foodtruck"
         />
-        
+
       <Header menuItems={menuItems}></Header>
 
       <div className='bg-black opacity-[65%] w-full h-full z-[2] absolute'/>
@@ -42,7 +42,7 @@ export default function Impressie() {
       </section>
 
 
-      <section className='mt-[110px] pt-[50px] ml:mt-[175px] ml:pt-[50px] md:mb-[225px]'>
+      <section className='mt-[50px] pt-[50px] mb-[128px] ml:mt-[175px] ml:pt-[50px] md:mb-[225px]'>
       <Text content={{
           text_top: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
           text_bottom: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',

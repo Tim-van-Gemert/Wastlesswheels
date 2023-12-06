@@ -2,7 +2,7 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
+  "/offerte-aanvragen": "pages/offerte-aanvragen.js",
   "/": "pages/index.js",
-  "/impressie": "pages/impressie.js",
-  "/offerte-aanvragen": "pages/offerte-aanvragen.js"
+  "/impressie": "pages/impressie.js"
 }

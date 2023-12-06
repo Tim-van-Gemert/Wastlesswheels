@@ -20,7 +20,12 @@ const fontSize = {
         lineHeight: '1'
     }],
 
-    'title-h1-medium': ['50px', {
+    'title-h1-medium': ['38px', {
+        fontWeight: '600',
+        lineHeight: '105%'
+    }],
+
+    'title-h1-medium-front': ['50px', {
         fontWeight: '600',
         lineHeight: '105%'
     }],
