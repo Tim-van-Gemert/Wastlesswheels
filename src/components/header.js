@@ -124,7 +124,7 @@ export default function Header({menuItems}) {
                 {menuItems.map((item) => {
                     return (
                         <Link  onClick={handleClick}  key={item.href} className=' navitem h-fit w-full ' href={item.href}> 
-                            <span className='group-hover:text-accent text-white group flex flex-col w-fit'>
+                            <span className='group-hover:text-accent text-white group flex flex-col '>
                                 {item.title}
                                 <div className=' w-full md:w-0 group-hover:w-full  transition-all h-[2px] bg-accent'></div>
                             </span>
