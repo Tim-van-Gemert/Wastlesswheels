@@ -125,7 +125,7 @@ export default function Header({menuItems}) {
             
                 {menuItems.map((item) => {
                     return (
-                        <Link  onClick={handleClick}  key={item.href} className='group navitem h-fit  min-w-[80px] w-fit ' href={item.href}> 
+                        <Link  onClick={handleClick}  key={item.href} className='group navitem h-fit   w-fit ' href={item.href}> 
                         <span className='group-hover:text-accent text-white'>{item.title}</span>
                         <div className=' w-full md:w-0 group-hover:w-full  transition-all h-[2px] bg-accent'></div>
                         </Link>
