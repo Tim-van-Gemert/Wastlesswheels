@@ -35,6 +35,7 @@ export default function Header({menuItems}) {
             }, 500);
 
             document.querySelector('body').classList.add('overflow-hidden');
+
             } else {
       
             setTimeout(() => {
@@ -45,12 +46,9 @@ export default function Header({menuItems}) {
 
 
 
-
             Array.from(navItems).map((item) => {
                 item.classList.add('opacity-0');
             })
-                
-      
             
             }
         }
@@ -125,9 +123,11 @@ export default function Header({menuItems}) {
             
                 {menuItems.map((item) => {
                     return (
-                        <Link  onClick={handleClick}  key={item.href} className='group navitem h-fit   w-fit ' href={item.href}> 
-                        <span className='group-hover:text-accent text-white'>{item.title}</span>
-                        <div className=' w-full md:w-0 group-hover:w-full  transition-all h-[2px] bg-accent'></div>
+                        <Link  onClick={handleClick}  key={item.href} className=' navitem h-fit w-full ' href={item.href}> 
+                            <span className='group-hover:text-accent text-white group flex flex-col w-fit'>
+                                {item.title}
+                                <div className=' w-full md:w-0 group-hover:w-full  transition-all h-[2px] bg-accent'></div>
+                            </span>
                         </Link>
                     )
                 })}
