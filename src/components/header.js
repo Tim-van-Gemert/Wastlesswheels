@@ -1,5 +1,6 @@
 import { Poppins } from 'next/font/google'
 import Link from 'next/link'
+import Image from 'next/image';
 import { useState, useEffect } from 'react';
 
 const poppins = Poppins({ subsets: ['latin'],  weight: ["300", "400", "500", "600", "700", "800", "900"] })
@@ -107,8 +108,10 @@ export default function Header({menuItems}) {
     return <>
         <header className={` flex absolute top-0 z-[3] justify-center  w-full  ${poppins.className}`}>
             <div className='flex w-full justify-between items-center py-4 w-full ml:w-theme  relative z-[3] max-w-theme px-4 ml:px-theme-lg'>
-
-                <Link onClick={handleHomeClick} href={'/'} className='text-nav text-primary text-white relative z-[11]'>Wasteless Wheels</Link>
+                
+                <Link onClick={handleHomeClick} href={'/'} className='text-nav text-primary text-white items-center flex gap-2 relative z-[11]'>
+                    <div>  Wasteless Wheels </div>
+                </Link>
 {/* 
                 <button onClick={handleClick} className="flex relative z-[11]'> flex-col justify-center items-center md:hidden flex gap-[4px] h-[30px] ">
                         <span className={`bg-white block  relative z-[11] transition-all duration-300 ease-out h-0.5 w-4 rounded-sm ${isOpen ? 'rotate-45 translate-y-1' : '-translate-y-0.5' }`} >
