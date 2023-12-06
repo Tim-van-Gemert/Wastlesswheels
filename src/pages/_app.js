@@ -3,25 +3,19 @@ import Footer from '@/components/footer'
 import Script from 'next/script'
 import { useEffect } from 'react';
 import { Analytics } from '@vercel/analytics/react';
+import Header from '@/components/header';
 
-const menuItems =[
-  {
-    title: 'Over ons',
-    href: '#over-ons'
-  },
-  {
-    title: 'Ons menu',
-    href: '#menu'
-  },
-  {
-    title: 'Contact',
-    href: '#offerte-aanvragen'
-  }
-]
+
+
 
 export default function App({ Component, pageProps }) {
 
-
+  const menuItems =[
+    {
+      title: 'Offerte aanvragen',
+      href: '/offerte-aanvragen'
+    }
+  ]
   return <>
     <Script  strategy="afterInteractive" src={`https://www.googletagmanager.com/gtag/js?id=${process.env.GTAG4}`}/>
     <Script

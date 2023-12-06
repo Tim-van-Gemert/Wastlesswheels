@@ -5,13 +5,7 @@ export default function Form() {
   return (
     <div className='flex w-full flex-col items-center relative bg-white overflow-hidden'>
       <div className=' w-full xl:w-theme max-w-theme grid grid-cols-12 px-4 ml:px-theme-lg '>
-
-      <div className='col-span-12  text-primary  flex flex-col  mb-5'>
-        <span className='text-title-h2-medium md:text-title-h2-bold lowercase'>Vraag een offerte aan!</span>
-        <span className='text-small-thin md:text-regular-thin -mt-1 text-accent'>Lorem ipsum fake text</span>
-      </div>
-
-
+        
       <div className=' col-span-12  ml:col-span-7  text-primary  flex flex-col'>
         <div className=' text-regular-small w-full max-w-full md:text-regular-thin '>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
         <form className='mt-5 flex flex-col gap-5 w-full max-w-full'>

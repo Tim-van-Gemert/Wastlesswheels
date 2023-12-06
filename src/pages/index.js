@@ -8,33 +8,28 @@ import Menu from '@/components/menu'
 import Text from '@/components/text'
 import Slider from '@/components/slider'
 import Form from '@/components/form'
+import Contact from '@/components/contact'
 
 
-const menuItems =[
-  {
-    title: 'Over ons',
-    href: '#over-ons'
-  },
-  {
-    title: 'Ons menu',
-    href: '#menu'
-  },
-  {
-    title: 'Contact',
-    href: '#offerte-aanvragen'
-  }
-]
 
 
 const poppins = Poppins({ subsets: ['latin'],  weight: ["200", "300", "400", "500", "600", "700", "800", "900"] })
 
 export default function Home() {
+    const menuItems =[
+      {
+        title: 'Offerte aanvragen',
+        href: '/offerte-aanvragen'
+      }
+    ]
+    
+
   return (
     <main className={`${poppins.className} flex flex-col`}>
 
       <section className='flex w-full flex-col items-center bg-black h-[100vh] max-h-[1000px]  relative '>
 
-      <Header menuItems={menuItems}></Header>/
+      <Header menuItems={menuItems}></Header>
 
       <div className='bg-black opacity-[65%] w-full h-full z-[2] absolute'/>
 
@@ -51,7 +46,7 @@ export default function Home() {
           <h1 className='text-title-h1-medium md:text-title-h1 text-white'>WasteLess Wheels</h1>
           <span className='text-title-h2-small md:text-title-h2-bold text-accent '>De revolutie in streetfood</span>
           <div className='mt-7 flex flex-col md:flex-row gap-3'>
-          <Button  text={'offerte aanvragen'} href={'#offerte-aanvragen'}/>
+          <Button id={'Landings_pagina_cta'} text={'offerte aanvragen'} href={'/offerte-aanvragen'}/>
           <Button  text={'Ons menu'} href={'#menu'}/>
 
           </div>
@@ -80,7 +75,7 @@ export default function Home() {
 
 
       <section id='offerte-aanvragen'className='mt-[110px] pt-[50px] ml:mt-[175px] ml:pt-[50px] md:mb-[225px]'>
-        <Form/>
+        <Contact/>
       </section>
       
     </main>
