@@ -7,7 +7,7 @@ export default function Menu() {
     {
       name: 'Onze Vegetarische Burger - Een Groene Delicatesse!',
       desc: 'Proef de magie van onze vegetarische burger! Gemaakt met verse, lokaal geproduceerde ingrediënten en vol van smaak. Het is niet alleen een feest voor je smaakpapillen, maar ook voor de planeet.',
-      image_src: '/burger.jpg'
+      image_src: '/burger.jpeg'
     },
     {
       name: 'Zoete Aardappel Frietjes met Kruidige Hummus - Een Knapperige Verleiding!',
@@ -17,7 +17,7 @@ export default function Menu() {
     {
       name: 'Groente Taco - Een Kleurrijk Festijn!',
       desc: 'Maak kennis met onze groente taco’s: een explosie van kleur en smaak in elke hap. Vers, levendig en vol met de beste seizoensgroenten, ze zijn een ode aan de natuur.',
-      image_src: '/salads.jpg'
+      image_src: '/taco.jpg'
     },
   ]
   return (
@@ -26,7 +26,7 @@ export default function Menu() {
 
       <div className='col-span-12 ml:col-span-10 ml:col-start-2 text-primary  flex flex-col'>
         <span className='text-title-h2-medium md:text-title-h2-bold lowercase'>Ons menu</span>
-        <span className='text-small-thin md:text-regular-thin -mt-1 text-accent'>Lorem ipsum fake text</span>
+        <span className='text-small-thin md:text-regular-thin -mt-1 text-accent'>Bekijk onze heerlijke gerechten </span>
 
 
         <div className='flex flex-col  gap-8 md:gap-6  mt-8'>
@@ -35,7 +35,7 @@ export default function Menu() {
             return (
               <div className='flex flex-col md:flex-row   gap-4 xl:gap-10 '>
                 <Image
-                  className=' h-full md:w-[380px] ml:w-[480px] rounded-[5px] s:w-full md:h-[200px] ml:h-[356px] z-[1] '
+                  className=' h-full  md:min-w-[380px] ml:min-w-[480px] md:w-[380px] ml:w-[480px]  rounded-[5px] object-cover s:w-full md:min-h-[200px] max-h-[356px] z-[1] '
                   src={item.image_src}
                   width={480}
                   height={356}
