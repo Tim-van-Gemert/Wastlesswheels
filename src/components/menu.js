@@ -5,18 +5,18 @@ export default function Menu() {
 
   const menuFoods =[
     {
-      name: 'ZERO burgers',
-      desc: 'Een hamburger gemaakt uit verse tomaat, kaas , ijsberg sla, runder gehakt en honing mosterd saus',
+      name: 'Onze Vegetarische Burger - Een Groene Delicatesse!',
+      desc: 'Proef de magie van onze vegetarische burger! Gemaakt met verse, lokaal geproduceerde ingrediënten en vol van smaak. Het is niet alleen een feest voor je smaakpapillen, maar ook voor de planeet.',
       image_src: '/burger.jpg'
     },
     {
-      name: 'Frisky fries',
-      desc: 'Een hamburger gemaakt uit verse tomaat, kaas , ijsberg sla, runder gehakt en honing mosterd saus',
+      name: 'Zoete Aardappel Frietjes met Kruidige Hummus - Een Knapperige Verleiding!',
+      desc: 'Onze zoete aardappel frietjes, geserveerd met zelfgemaakte kruidige hummus, zijn een ware traktatie. Perfect gekruid en gebakken tot goudbruine perfectie, een echte duurzame lekkernij.',
       image_src: '/fries.jpg'
     },
     {
-      name: 'Supreme salads',
-      desc: 'Een hamburger gemaakt uit verse tomaat, kaas , ijsberg sla, runder gehakt en honing mosterd saus',
+      name: 'Groente Taco - Een Kleurrijk Festijn!',
+      desc: 'Maak kennis met onze groente taco’s: een explosie van kleur en smaak in elke hap. Vers, levendig en vol met de beste seizoensgroenten, ze zijn een ode aan de natuur.',
       image_src: '/salads.jpg'
     },
   ]

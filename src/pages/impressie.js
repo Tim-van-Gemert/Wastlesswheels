@@ -43,13 +43,19 @@ export default function Impressie() {
 
 
       <section className='mt-[50px] pt-[50px] mb-[128px] ml:mt-[175px] ml:pt-[50px] md:mb-[225px]'>
-      <Text content={{
-          text_top: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
-          text_bottom: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
-          text_button: 'Bekijk meer',
-          href_button: '/',
-        }
-      }/>
+      <div className='flex w-full flex-col items-center relative  bg-white '>
+            <div className=' w-full 2xl:w-theme max-w-theme grid grid-cols-12 px-4  ml:px-theme-lg '>
+              <div className=' col-span-12 text-primary text-title-h2-tiny-bold md:text-title-h2-small-bold ml:text-intro'>
+              Bij Wasteless Wheels zijn we constant in beweging, letterlijk en figuurlijk!
+              </div>
+              <div className=' col-span-12 ml:col-span-7 ml:col-start-6 mt-4 text-primary text-regular-small md:text-regular'>
+              We zijn nog in de opstartfase en werken hard aan het creëren van een unieke, visuele ervaring die net zo indrukwekkend zal zijn als onze gerechten. Hoewel we momenteel nog geen beelden kunnen delen, zijn we enthousiast over de toekomstige onthullingen!
+              <br></br>
+              <br></br>
+              Stel je voor: een kleurrijke foodtruck, gevuld met de geuren van verse, duurzame ingrediënten en het geluid van sissende vegetarische lekkernijen. Een plek waar elke maaltijd een verhaal vertelt over zorg voor de planeet en passie voor smaak.
+              </div>
+            </div>
+      </div>
       </section>
       
     </main>

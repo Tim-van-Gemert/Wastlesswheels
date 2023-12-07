@@ -7,13 +7,13 @@ export default function Contact() {
       <div className=' w-full xl:w-theme max-w-theme grid grid-cols-12 px-4 ml:px-theme-lg '>
 
       <div className='col-span-12  text-primary  flex flex-col  mb-5'>
-        <span className='text-title-h2-medium md:text-title-h2-bold lowercase'>Contact</span>
-        <span className='text-small-thin md:text-regular-thin -mt-1 text-accent'>Lorem ipsum fake text</span>
+        <span className='text-title-h2-medium md:text-title-h2-bold lowercase'>Contacteer Ons</span>
+        <span className='text-small-thin md:text-regular-thin -mt-1 text-accent'>We Horen Graag van Jou!</span>
       </div>
-
+      
 
       <div className=' col-span-12  ml:col-span-7  text-primary  flex flex-col'>
-        <div className=' text-regular-small w-full max-w-full md:text-regular-thin '>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
+        <div className=' text-regular-small w-full max-w-full md:text-regular-thin '>Heb je vragen of suggesties? Vul ons contactformulier in! Bij Wasteless Wheels waarderen we elk stukje feedback om onze service en impact te verbeteren.</div>
         <form className='mt-5 flex flex-col gap-5 w-full max-w-full'>
             <div className='flex flex-col md:flex-row gap-5'>
               <input type="text" className='w-full input  md:col-span-6 py-1 px-3 border-solid border-black border-[1px]  text-regular-small md:text-form' placeholder='Naam'/>

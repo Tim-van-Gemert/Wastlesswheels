@@ -38,7 +38,7 @@ const fontSize = {
         fontWeight: '400',
     }],
 
-    'regular-thin': ['26px', {
+    'regular-thin': ['24px', {
         fontWeight: '300',
     }],
 

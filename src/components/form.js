@@ -30,7 +30,7 @@ export default function Form() {
       <div className=' w-full xl:w-theme max-w-theme grid grid-cols-12 px-4 ml:px-theme-lg '>
 
       <div className=' col-span-12  ml:col-span-7  text-primary  flex flex-col'>
-        <div className=' text-regular-small w-full max-w-full md:text-regular-thin '>Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups</div>
+        <div className=' text-regular-small w-full max-w-full md:text-regular-thin '>Interesse in Wasteless Wheels voor jouw evenement? Vraag vandaag nog een offerte aan! Wij zorgen voor een onvergetelijke culinaire ervaring met respect voor de aarde.</div>
         <form onSubmit={handleSubmit} className='mt-5 flex flex-col gap-5 w-full max-w-full'>
             <div className='flex flex-col md:flex-row gap-5'>
               <input type="text" className='w-full input  md:col-span-6 py-1 px-3 border-solid border-black border-[1px]  text-regular-small md:text-form' placeholder='Naam'/>

@@ -6,8 +6,6 @@ import Button from '@/components/button'
 import Menu from '@/components/menu'
 
 import Text from '@/components/text'
-import Slider from '@/components/slider'
-import Form from '@/components/form'
 import Contact from '@/components/contact'
 
 
@@ -55,8 +53,8 @@ export default function Home() {
 
       <section id='over-ons' className='mt-[50px] pt-[50px] ml:mt-[175px] ml:pt-[50px] '>
       <Text content={{
-          text_top: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
-          text_bottom: 'Lorem ipsum is placeholder text commonly used in the graphic, print, and publishing industries for previewing layouts and visual mockups',
+          text_top: 'Welkom bij Wasteless Wheels. Verse, vegetarische streetfood gerechten op wielen, met respect voor de planeet',
+          text_bottom: 'Onze missie is simpel: heerlijke vegetarische gerechten aanbieden terwijl we onze ecologische voetafdruk minimaliseren. Als zero waste foodtruck brengen we smaak en duurzaamheid samen op één plek. Ontdek onze liefde voor de planeet door elk hap!',
           text_button: 'Bekijk meer',
           href_button: '/',
         }
