@@ -7,7 +7,7 @@ export default function Menu() {
     {
       name: 'Onze Vegetarische Burger - Een Groene Delicatesse!',
       desc: 'Proef de magie van onze vegetarische burger! Gemaakt met verse, lokaal geproduceerde ingrediënten en vol van smaak. Het is niet alleen een feest voor je smaakpapillen, maar ook voor de planeet.',
-      image_src: '/burger.jpeg'
+      image_src: '/burger.jpg'
     },
     {
       name: 'Zoete Aardappel Frietjes met Kruidige Hummus - Een Knapperige Verleiding!',
