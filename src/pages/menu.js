@@ -17,7 +17,7 @@ export default function Menu() {
         src="/foodtruck foto.jpg"
         width={1400}
         height={736}
-        alt="Picture of foodtruck"
+        alt="Picture of food truck"
       />
 
 
