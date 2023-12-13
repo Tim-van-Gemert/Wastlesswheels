@@ -3,7 +3,5 @@
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
   "/": "pages/index.js",
-  "/impressie": "pages/impressie.js",
-  "/offerte-aanvragen": "pages/offerte-aanvragen.js",
-  "/menu": "pages/menu.js"
+  "/impressie": "pages/impressie.js"
 }

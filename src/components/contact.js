@@ -1,4 +1,5 @@
 import Image from 'next/image'
+import Link from 'next/link'
 
 export default function Contact() {
 
@@ -26,7 +27,7 @@ export default function Contact() {
             <textarea type="text" rows={4} className='w-full input  py-3 px-3 border-solid border-black border-[1px] text-regular-small md:text-form' placeholder='Extra informatie'/>
 
             <div className='col-span-12'>
-                <button type='submit' className='py-1 px-3 border-solid border-black btn-tiny md:text-btn  border-[1px] transition-all hover:text-white hover:bg-black'> Verstuur </button>
+                <Link href={'/impressie'} type='submit' className='py-1 px-3 border-solid border-black btn-tiny md:text-btn  border-[1px] transition-all hover:text-white hover:bg-black'> Verstuur </Link>
             </div>
         </form>
       </div>
